@@ -1,24 +1,24 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background color */
+    background-color: #f4f4f4; 
 }
 
 header {
-    background-color: #f8b400; /* Header background color */
+    background-color: #f8b400;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 h1 {
     margin: 0;
-    color: #fff; /* White text color */
+    color: #fff;
 }
 
-/* Cart Button */
+
 #cart {
     text-align: center;
     
@@ -27,113 +27,100 @@ h1 {
     
 }
 
-/* Product List Styles */
+
 #product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    gap: 20px; /* Space between products */
+    gap: 20px; 
 }
 
-/* Individual Product Styles */
+
 .product {
-    background-color: #fff; /* White background for products */
+    background-color: #fff; 
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
     text-align: center;
-    width: 220px; /* Slightly wider product boxes */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Smooth hover effect */
+    width: 220px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
 }
 
 .product:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
 }
 
-/* Button Styles */
+
 button {
-    background-color: #f8b400; /* Button background color */
+    background-color: #f8b400; 
     border: none;
     color: white;
-    padding: 10px 15px; /* More padding for buttons */
+    padding: 10px 15px; 
     cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Larger font size */
-    transition: background-color 0.3s; /* Smooth transition */
+    border-radius: 5px;
+    font-size: 16px; 
+    transition: background-color 0.3s; 
 }
 
 button:hover {
-    background-color: #d89e00; /* Darker shade on hover */
+    background-color: #d89e00; 
 }
 
-/* Modal Styles */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-    padding-top: 60px; /* Space from the top */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px; 
 }
 
-/* Modal Content */
 .modal-content {
-    background-color: #fefefe; /* White background */
-    margin: 5% auto; /* 5% from the top and centered */
+    background-color: #fefefe; 
+    margin: 5% auto; 
     padding: 20px;
-    border: 1px solid #888; /* Border */
-    width: 80%; /* Width of modal */
-    max-width: 500px; /* Max width for larger screens */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for modal */
+    border: 1px solid #888; 
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Close Button Styles */
+
 .close {
-    color: #aaa; /* Light grey */
-    float: right; /* Align to the right */
-    font-size: 28px; /* Large font */
-    font-weight: bold; /* Bold text */
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
 }
 
 .close:hover,
 .close:focus {
-    color: black; /* Darker color on hover */
-    text-decoration: none; /* No underline */
-    cursor: pointer; /* Pointer cursor */
+    color: black;
+    text-decoration: none; 
+    cursor: pointer; 
 }
 
-/* Cart Items List Styles */
+
 #cart-items {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    list-style-type: none; 
+    padding: 0;
 }
 
 #cart-items li {
-    padding: 5px 0; /* Padding for list items */
-    border-bottom: 1px solid #ccc; /* Separator line */
+    padding: 5px 0; 
+    border-bottom: 1px solid #ccc; 
 }
 
-/* Total Price Style */
+
 #total-price {
-    font-weight: bold; /* Bold text for total */
-    margin-top: 10px; /* Space above total */
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    #product-list {
-        flex-direction: column; /* Stack products vertically on small screens */
-        align-items: center; /* Center items */
-    }
-
-    .product {
-        width: 90%; /* Full width on small screens */
-    }
+    font-weight: bold;
+    margin-top: 10px; 
 }
