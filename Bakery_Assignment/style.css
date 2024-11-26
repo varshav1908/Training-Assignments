@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+header {
+    background-color: #f8b400; /* Header background color */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for header */
+}
+
+h1 {
+    margin: 0;
+    color: #fff; /* White text color */
+}
+
+/* Cart Button */
+#cart {
+    text-align: center;
+    
+    margin-top: 30px;
+  
+    
+}
+
+/* Product List Styles */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Space between products */
+}
+
+/* Individual Product Styles */
+.product {
+    background-color: #fff; /* White background for products */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 220px; /* Slightly wider product boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button Styles */
+button {
+    background-color: #f8b400; /* Button background color */
+    border: none;
+    color: white;
+    padding: 10px 15px; /* More padding for buttons */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #d89e00; /* Darker shade on hover */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px; /* Space from the top */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888; /* Border */
+    width: 80%; /* Width of modal */
+    max-width: 500px; /* Max width for larger screens */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for modal */
+}
+
+/* Close Button Styles */
+.close {
+    color: #aaa; /* Light grey */
+    float: right; /* Align to the right */
+    font-size: 28px; /* Large font */
+    font-weight: bold; /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Darker color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Cart Items List Styles */
+#cart-items {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#cart-items li {
+    padding: 5px 0; /* Padding for list items */
+    border-bottom: 1px solid #ccc; /* Separator line */
+}
+
+/* Total Price Style */
+#total-price {
+    font-weight: bold; /* Bold text for total */
+    margin-top: 10px; /* Space above total */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #product-list {
+        flex-direction: column; /* Stack products vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .product {
+        width: 90%; /* Full width on small screens */
+    }
+}

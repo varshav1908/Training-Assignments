@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bakery Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Bakery Shop</h1>
+        
+    </header>
+    <main>
+        <section id="product-list"></section>
+    </main>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0.00</p>
+        </div>
+    </div>
+    <div id="cart">
+      <button onclick="viewCart()">View Cart (<span id="cart-count">0</span>)</button>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
