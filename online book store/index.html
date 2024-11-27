@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 align="center" >Online Book Store</h1>
+    <div class="container">
+        <!-- Registration Form -->
+        <div id="form" class="mt-5">
+            <form id="regform">
+                <h4 align="center">Register</h4>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" id="age" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="categories" class="form-label">Select Categories</label>
+                    <select id="categories" class="form-control" multiple required>
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-Fiction</option>
+                        <option value="science">Science</option>
+                        <option value="technology">Technology</option>
+                        <option value="magazines">Magazines</option>
+                        <option value="kids-education">Kids Education</option>
+                    </select>
+                </div>
+                <button align="centre " type="submit" class="center-block">Register</button>
+            </form>
+
+            <!-- Link to Login -->
+            <p class="register">Already have an account? <a href="javascript:void(0);" id="show-login">Login here</a></p>
+        </div>
+
+        <!-- Login Form (Initially Hidden) -->
+        <div id="login-form" class="mt-5" style="display:none;">
+            <h2 align="center">Login</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Email</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                <button type="submit" class="center-block">Login</button>
+            </form>
+
+            <!-- Link to Registration -->
+            <p class="register" >Don't have an account? <a href="javascript:void(0);" id="show-register">Register here</a></p>
+        </div>
+
+        <!-- Books Display (Initially Hidden) -->
+        <div id="books-display" class="mt-5" style="display:none;">
+            <h2>Your Selected Books</h2>
+            <div id="books-list" class="row"> </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
