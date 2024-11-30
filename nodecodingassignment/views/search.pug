@@ -1,0 +1,35 @@
+html
+  head
+    title Search Products
+  body
+    h1 Search Products
+
+    form(action='/searchproducts', method='POST')
+      div
+        label(for='searchbyname') search by name:
+        input(type='text', name='searchbyname', required=true)
+      div
+        label(for='searchbycategory') saarch by category:
+        input(type='password', name='searchbycategory', required=true)
+      div
+        button(type='submit') search
+
+    //-  if searchResults
+
+
+//-   .search-results
+//-     h2 Search Results
+//-     if searchResults.length === 0
+//-       p No products found.
+//-     else
+//-       ul
+//-         each product in searchResults
+//-           li
+//-             strong= product.name
+//-             |  - 
+//-             span= product.category
+//-             |  - ₹
+//-             = product.price
+
+        
+    
