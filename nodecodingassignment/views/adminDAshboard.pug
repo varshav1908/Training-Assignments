@@ -1,0 +1,42 @@
+html
+  head
+    title Admin Dashboard
+  body
+    h1 Admin Dashboard
+    h3 Register Product
+
+   
+
+    form(action='/adminDAshboard', method='POST')
+      div
+        label(for='productname') Product Name:
+        input(type='text', name='productname', placeholder='Product Name' required=true)
+      div
+        label(for='productid') Product ID:
+        input(type='text', name='productid', required=true)
+      div
+        label(for='price') Price:
+        input(type='text', name='price', required=true)
+      div
+        label(for='category') Category:
+        input(type='text', name='category', required=true)
+      div
+        label(for='mfgdate') Manufacture Date:
+        input(type='date', name='mfgdate', required=true)
+      div
+        label(for='expdate') Expiry Date:
+        input(type='date', name='expdate', required=true)
+      div
+        button(type='submit') Register Product
+
+    h2 Product List
+    ul
+      // Iterate through products and display each one
+      each product in products
+        li
+          strong #{product.name}
+          | - #{product.category} - ₹#{product.price} - Manufactured on: #{product.mfgdate} - Expiry: #{product.expdate}
+
+
+
+
